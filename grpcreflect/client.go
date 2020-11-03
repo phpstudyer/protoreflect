@@ -6,6 +6,7 @@ import (
 	"io"
 	"reflect"
 	"runtime"
+	"strings"
 	"sync"
 
 	"github.com/golang/protobuf/proto"
@@ -18,6 +19,9 @@ import (
 	"github.com/jhump/protoreflect/desc"
 	"github.com/jhump/protoreflect/internal"
 )
+
+// NoCheckPrefix 本地protobuff文件库不从文件解析
+var NoCheckPrefix = "git.xuekaole.com/sys_protobuf"
 
 // elementNotFoundError is the error returned by reflective operations where the
 // server does not recognize a given file name, symbol name, or extension.
@@ -294,6 +298,11 @@ func (cr *Client) getAndCacheFileDescriptors(req *rpb.ServerReflectionRequest, e
 func (cr *Client) descriptorFromProto(fd *dpb.FileDescriptorProto) (*desc.FileDescriptor, error) {
 	deps := make([]*desc.FileDescriptor, len(fd.GetDependency()))
 	for i, depName := range fd.GetDependency() {
+		if strings.HasPrefix(depName, NoCheckPrefix) {
+			dn := strings.Split(depName, "/")
+			fd.Dependency[i] = dn[len(dn)-1]
+			depName = dn[len(dn)-1]
+		}
 		if dep, err := cr.FileByFilename(depName); err != nil {
 			return nil, err
 		} else {
