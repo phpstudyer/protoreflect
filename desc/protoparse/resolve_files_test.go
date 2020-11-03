@@ -6,7 +6,7 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/jhump/protoreflect/internal/testutil"
+	"github.com/phpstudyer/protoreflect/internal/testutil"
 )
 
 func TestResolveFilenames(t *testing.T) {

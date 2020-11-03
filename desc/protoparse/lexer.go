@@ -10,7 +10,7 @@ import (
 	"strings"
 	"unicode/utf8"
 
-	"github.com/jhump/protoreflect/desc/protoparse/ast"
+	"github.com/phpstudyer/protoreflect/desc/protoparse/ast"
 )
 
 type runeReader struct {

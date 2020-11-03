@@ -7,8 +7,8 @@ import (
 	"github.com/golang/protobuf/proto"
 	dpb "github.com/golang/protobuf/protoc-gen-go/descriptor"
 
-	"github.com/jhump/protoreflect/desc"
-	"github.com/jhump/protoreflect/desc/internal"
+	"github.com/phpstudyer/protoreflect/desc"
+	"github.com/phpstudyer/protoreflect/desc/internal"
 )
 
 // MessageBuilder is a builder used to construct a desc.MessageDescriptor. A

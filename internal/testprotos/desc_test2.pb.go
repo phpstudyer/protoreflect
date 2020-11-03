@@ -8,8 +8,8 @@ package testprotos
 
 import (
 	proto "github.com/golang/protobuf/proto"
-	nopkg "github.com/jhump/protoreflect/internal/testprotos/nopkg"
-	pkg "github.com/jhump/protoreflect/internal/testprotos/pkg"
+	nopkg "github.com/phpstudyer/protoreflect/internal/testprotos/nopkg"
+	pkg "github.com/phpstudyer/protoreflect/internal/testprotos/pkg"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	reflect "reflect"
@@ -214,7 +214,7 @@ type Whatchamacallit struct {
 	sizeCache     protoimpl.SizeCache
 	unknownFields protoimpl.UnknownFields
 
-	Foos *pkg.Foo `protobuf:"varint,1,req,name=foos,enum=jhump.protoreflect.desc.Foo" json:"foos,omitempty"`
+	Foos *pkg.Foo `protobuf:"varint,1,req,name=foos,enum=phpstudyer.protoreflect.desc.Foo" json:"foos,omitempty"`
 }
 
 func (x *Whatchamacallit) Reset() {
@@ -466,8 +466,8 @@ var file_desc_test2_proto_goTypes = []interface{}{
 	(*AnotherTestMessage)(nil),        // 5: testprotos.AnotherTestMessage
 	(*TestMessage_NestedMessage)(nil), // 6: testprotos.TestMessage.NestedMessage
 	(TestMessage_NestedEnum)(0),       // 7: testprotos.TestMessage.NestedEnum
-	(pkg.Foo)(0),                      // 8: jhump.protoreflect.desc.Foo
-	(*pkg.Bar)(nil),                   // 9: jhump.protoreflect.desc.Bar
+	(pkg.Foo)(0),                      // 8: phpstudyer.protoreflect.desc.Foo
+	(*pkg.Bar)(nil),                   // 9: phpstudyer.protoreflect.desc.Bar
 	(*nopkg.TopLevel)(nil),            // 10: TopLevel
 }
 var file_desc_test2_proto_depIdxs = []int32{
@@ -477,8 +477,8 @@ var file_desc_test2_proto_depIdxs = []int32{
 	7,  // 3: testprotos.Frobnitz.c2:type_name -> testprotos.TestMessage.NestedEnum
 	6,  // 4: testprotos.Frobnitz.d:type_name -> testprotos.TestMessage.NestedMessage
 	7,  // 5: testprotos.Frobnitz.e:type_name -> testprotos.TestMessage.NestedEnum
-	8,  // 6: testprotos.Whatchamacallit.foos:type_name -> jhump.protoreflect.desc.Foo
-	9,  // 7: testprotos.Whatzit.gyzmeau:type_name -> jhump.protoreflect.desc.Bar
+	8,  // 6: testprotos.Whatchamacallit.foos:type_name -> phpstudyer.protoreflect.desc.Foo
+	9,  // 7: testprotos.Whatzit.gyzmeau:type_name -> phpstudyer.protoreflect.desc.Bar
 	10, // 8: testprotos.otl:extendee -> TopLevel
 	10, // 9: testprotos.groupx:extendee -> TopLevel
 	10, // 10: testprotos.otl:type_name -> TopLevel

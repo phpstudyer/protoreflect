@@ -5,8 +5,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/jhump/protoreflect/desc/protoparse/ast"
-	"github.com/jhump/protoreflect/internal/testutil"
+	"github.com/phpstudyer/protoreflect/desc/protoparse/ast"
+	"github.com/phpstudyer/protoreflect/internal/testutil"
 )
 
 func TestLexer(t *testing.T) {

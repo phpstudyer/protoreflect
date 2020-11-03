@@ -10,7 +10,7 @@ import (
 
 	dpb "github.com/golang/protobuf/protoc-gen-go/descriptor"
 
-	"github.com/jhump/protoreflect/internal/testutil"
+	"github.com/phpstudyer/protoreflect/internal/testutil"
 )
 
 type ident string

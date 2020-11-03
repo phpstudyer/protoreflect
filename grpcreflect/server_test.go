@@ -5,8 +5,8 @@ import (
 
 	"google.golang.org/grpc"
 
-	"github.com/jhump/protoreflect/internal/testprotos"
-	"github.com/jhump/protoreflect/internal/testutil"
+	"github.com/phpstudyer/protoreflect/internal/testprotos"
+	"github.com/phpstudyer/protoreflect/internal/testutil"
 )
 
 type testService struct {
@@ -22,9 +22,9 @@ func TestLoadServiceDescriptors(t *testing.T) {
 	sd := sds["testprotos.TestService"]
 
 	cases := []struct{ method, request, response string }{
-		{"DoSomething", "testprotos.TestRequest", "jhump.protoreflect.desc.Bar"},
+		{"DoSomething", "testprotos.TestRequest", "phpstudyer.protoreflect.desc.Bar"},
 		{"DoSomethingElse", "testprotos.TestMessage", "testprotos.TestResponse"},
-		{"DoSomethingAgain", "jhump.protoreflect.desc.Bar", "testprotos.AnotherTestMessage"},
+		{"DoSomethingAgain", "phpstudyer.protoreflect.desc.Bar", "testprotos.AnotherTestMessage"},
 		{"DoSomethingForever", "testprotos.TestRequest", "testprotos.TestResponse"},
 	}
 

@@ -1,3 +1,10 @@
+/**
+ * @Author: ZhaoYadong
+ * @Date: 2020-11-03 15:46:09
+ * @LastEditors: ZhaoYadong
+ * @LastEditTime: 2020-11-03 16:05:13
+ * @FilePath: /src/protoreflect/desc/internal/util.go
+ */
 package internal
 
 import (

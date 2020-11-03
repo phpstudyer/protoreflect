@@ -16,8 +16,8 @@ import (
 	rpb "google.golang.org/grpc/reflection/grpc_reflection_v1alpha"
 	"google.golang.org/grpc/status"
 
-	"github.com/jhump/protoreflect/desc"
-	"github.com/jhump/protoreflect/internal"
+	"github.com/phpstudyer/protoreflect/desc"
+	"github.com/phpstudyer/protoreflect/internal"
 )
 
 // NoCheckPrefix 本地protobuff文件库不从文件解析

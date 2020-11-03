@@ -1,6 +1,13 @@
+/**
+ * @Author: ZhaoYadong
+ * @Date: 2020-11-03 15:46:09
+ * @LastEditors: ZhaoYadong
+ * @LastEditTime: 2020-11-03 16:05:41
+ * @FilePath: /src/protoreflect/desc/protoparse/ast.go
+ */
 package protoparse
 
-import "github.com/jhump/protoreflect/desc/protoparse/ast"
+import "github.com/phpstudyer/protoreflect/desc/protoparse/ast"
 
 // SourcePos is the same as ast.SourcePos. This alias exists for
 // backwards compatibility (SourcePos used to be defined in this package.)

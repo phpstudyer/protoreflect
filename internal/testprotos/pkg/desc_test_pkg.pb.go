@@ -107,7 +107,7 @@ type Bar struct {
 	sizeCache     protoimpl.SizeCache
 	unknownFields protoimpl.UnknownFields
 
-	Baz []Foo `protobuf:"varint,1,rep,name=baz,enum=jhump.protoreflect.desc.Foo" json:"baz,omitempty"`
+	Baz []Foo `protobuf:"varint,1,rep,name=baz,enum=phpstudyer.protoreflect.desc.Foo" json:"baz,omitempty"`
 }
 
 func (x *Bar) Reset() {
@@ -185,11 +185,11 @@ func file_pkg_desc_test_pkg_proto_rawDescGZIP() []byte {
 var file_pkg_desc_test_pkg_proto_enumTypes = make([]protoimpl.EnumInfo, 1)
 var file_pkg_desc_test_pkg_proto_msgTypes = make([]protoimpl.MessageInfo, 1)
 var file_pkg_desc_test_pkg_proto_goTypes = []interface{}{
-	(Foo)(0),    // 0: jhump.protoreflect.desc.Foo
-	(*Bar)(nil), // 1: jhump.protoreflect.desc.Bar
+	(Foo)(0),    // 0: phpstudyer.protoreflect.desc.Foo
+	(*Bar)(nil), // 1: phpstudyer.protoreflect.desc.Bar
 }
 var file_pkg_desc_test_pkg_proto_depIdxs = []int32{
-	0, // 0: jhump.protoreflect.desc.Bar.baz:type_name -> jhump.protoreflect.desc.Foo
+	0, // 0: phpstudyer.protoreflect.desc.Bar.baz:type_name -> phpstudyer.protoreflect.desc.Foo
 	1, // [1:1] is the sub-list for method output_type
 	1, // [1:1] is the sub-list for method input_type
 	1, // [1:1] is the sub-list for extension type_name

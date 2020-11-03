@@ -12,10 +12,10 @@ import (
 	"github.com/golang/protobuf/proto"
 	dpb "github.com/golang/protobuf/protoc-gen-go/descriptor"
 
-	"github.com/jhump/protoreflect/codec"
-	"github.com/jhump/protoreflect/desc"
-	"github.com/jhump/protoreflect/internal"
-	"github.com/jhump/protoreflect/internal/testutil"
+	"github.com/phpstudyer/protoreflect/codec"
+	"github.com/phpstudyer/protoreflect/desc"
+	"github.com/phpstudyer/protoreflect/internal"
+	"github.com/phpstudyer/protoreflect/internal/testutil"
 )
 
 func TestEmptyParse(t *testing.T) {
@@ -124,7 +124,7 @@ func TestSimpleParse(t *testing.T) {
 	testutil.Ok(t, err)
 	fd = res.fd
 	testutil.Eq(t, "../../internal/testprotos/pkg/desc_test_pkg.proto", fd.GetName())
-	testutil.Eq(t, "jhump.protoreflect.desc", fd.GetPackage())
+	testutil.Eq(t, "phpstudyer.protoreflect.desc", fd.GetPackage())
 	testutil.Require(t, hasEnum(fd, "Foo"))
 	testutil.Require(t, hasMessage(fd, "Bar"))
 	protos[fd.GetName()] = res

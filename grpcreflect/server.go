@@ -1,3 +1,10 @@
+/**
+ * @Author: ZhaoYadong
+ * @Date: 2020-11-03 15:46:09
+ * @LastEditors: ZhaoYadong
+ * @LastEditTime: 2020-11-03 16:10:10
+ * @FilePath: /src/protoreflect/grpcreflect/server.go
+ */
 package grpcreflect
 
 import (
@@ -5,7 +12,7 @@ import (
 
 	"google.golang.org/grpc"
 
-	"github.com/jhump/protoreflect/desc"
+	"github.com/phpstudyer/protoreflect/desc"
 )
 
 // LoadServiceDescriptors loads the service descriptors for all services exposed by the

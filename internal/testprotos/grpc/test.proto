@@ -18,7 +18,7 @@ syntax = "proto3";
 
 // NB: we are generating locally into this repo
 //option go_package = "google.golang.org/grpc/interop/grpc_testing";
-option go_package = "github.com/jhump/protoreflect/internal/testprotos/grpc";
+option go_package = "github.com/phpstudyer/protoreflect/internal/testprotos/grpc";
 
 package grpc.testing;
 

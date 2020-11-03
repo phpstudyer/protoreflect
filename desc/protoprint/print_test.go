@@ -12,10 +12,10 @@ import (
 	"github.com/golang/protobuf/proto"
 	"github.com/golang/protobuf/protoc-gen-go/descriptor"
 
-	"github.com/jhump/protoreflect/desc"
-	"github.com/jhump/protoreflect/desc/protoparse"
-	_ "github.com/jhump/protoreflect/internal/testprotos"
-	"github.com/jhump/protoreflect/internal/testutil"
+	"github.com/phpstudyer/protoreflect/desc"
+	"github.com/phpstudyer/protoreflect/desc/protoparse"
+	_ "github.com/phpstudyer/protoreflect/internal/testprotos"
+	"github.com/phpstudyer/protoreflect/internal/testutil"
 )
 
 const (

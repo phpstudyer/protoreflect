@@ -3,11 +3,11 @@ package internal
 import (
 	"github.com/golang/protobuf/proto"
 	dpb "github.com/golang/protobuf/protoc-gen-go/descriptor"
-	"github.com/jhump/protoreflect/internal/codec"
+	"github.com/phpstudyer/protoreflect/internal/codec"
 	"reflect"
 	"strings"
 
-	"github.com/jhump/protoreflect/internal"
+	"github.com/phpstudyer/protoreflect/internal"
 )
 
 // NB: We use reflection or unknown fields in case we are linked against an older

@@ -16,8 +16,8 @@ import (
 	"google.golang.org/genproto/protobuf/ptype"
 	"google.golang.org/genproto/protobuf/source_context"
 
-	"github.com/jhump/protoreflect/desc"
-	"github.com/jhump/protoreflect/dynamic"
+	"github.com/phpstudyer/protoreflect/desc"
+	"github.com/phpstudyer/protoreflect/dynamic"
 )
 
 const googleApisDomain = "type.googleapis.com"

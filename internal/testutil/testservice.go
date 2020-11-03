@@ -3,7 +3,7 @@ package testutil
 import (
 	"io"
 
-	grpc_testing "github.com/jhump/protoreflect/internal/testprotos/grpc"
+	grpc_testing "github.com/phpstudyer/protoreflect/internal/testprotos/grpc"
 	"golang.org/x/net/context"
 )
 

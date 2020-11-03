@@ -9,7 +9,7 @@ package testprotos
 import (
 	context "context"
 	proto "github.com/golang/protobuf/proto"
-	pkg "github.com/jhump/protoreflect/internal/testprotos/pkg"
+	pkg "github.com/phpstudyer/protoreflect/internal/testprotos/pkg"
 	grpc "google.golang.org/grpc"
 	codes "google.golang.org/grpc/codes"
 	status "google.golang.org/grpc/status"
@@ -315,7 +315,7 @@ var file_desc_test_proto3_proto_goTypes = []interface{}{
 	(*TestMessage)(nil),  // 5: testprotos.TestMessage
 	(*TestMessage_NestedMessage_AnotherNestedMessage)(nil), // 6: testprotos.TestMessage.NestedMessage.AnotherNestedMessage
 	(*AnotherTestMessage)(nil),                             // 7: testprotos.AnotherTestMessage
-	(*pkg.Bar)(nil),                                        // 8: jhump.protoreflect.desc.Bar
+	(*pkg.Bar)(nil),                                        // 8: phpstudyer.protoreflect.desc.Bar
 }
 var file_desc_test_proto3_proto_depIdxs = []int32{
 	0,  // 0: testprotos.TestRequest.foo:type_name -> testprotos.Proto3Enum
@@ -327,9 +327,9 @@ var file_desc_test_proto3_proto_depIdxs = []int32{
 	5,  // 6: testprotos.TestRequest.OthersEntry.value:type_name -> testprotos.TestMessage
 	1,  // 7: testprotos.TestService.DoSomething:input_type -> testprotos.TestRequest
 	5,  // 8: testprotos.TestService.DoSomethingElse:input_type -> testprotos.TestMessage
-	8,  // 9: testprotos.TestService.DoSomethingAgain:input_type -> jhump.protoreflect.desc.Bar
+	8,  // 9: testprotos.TestService.DoSomethingAgain:input_type -> phpstudyer.protoreflect.desc.Bar
 	1,  // 10: testprotos.TestService.DoSomethingForever:input_type -> testprotos.TestRequest
-	8,  // 11: testprotos.TestService.DoSomething:output_type -> jhump.protoreflect.desc.Bar
+	8,  // 11: testprotos.TestService.DoSomething:output_type -> phpstudyer.protoreflect.desc.Bar
 	2,  // 12: testprotos.TestService.DoSomethingElse:output_type -> testprotos.TestResponse
 	7,  // 13: testprotos.TestService.DoSomethingAgain:output_type -> testprotos.AnotherTestMessage
 	2,  // 14: testprotos.TestService.DoSomethingForever:output_type -> testprotos.TestResponse
